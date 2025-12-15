@@ -3,7 +3,9 @@
   command = "pnpm install && pnpm run build"
   publish = "dist"
 
-# Als je een SPA hebt (React router etc), dan voorkomt dit 404s op subpages
+[build.environment]
+  NODE_VERSION = "18"
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
