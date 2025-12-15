@@ -33,7 +33,7 @@ export default function CTASection() {
                 Plan een vrijblijvend adviesgesprek
               </Button>
             </Link>
-            <a href="#contact">
+            <a href="https://cdmq5sde51i.typeform.com/to/fRs6PC5e">
               <Button
                 size="lg"
                 variant="outline"
