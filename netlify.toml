@@ -1,0 +1,10 @@
+[build]
+  base = "client"
+  command = "pnpm install && pnpm run build"
+  publish = "dist"
+
+# Als je een SPA hebt (React router etc), dan voorkomt dit 404s op subpages
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
