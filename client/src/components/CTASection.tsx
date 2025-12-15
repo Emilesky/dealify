@@ -25,7 +25,7 @@ export default function CTASection() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact">
+            <Link href="https://cdmq5sde51i.typeform.com/to/fRs6PC5e">
               <Button
                 size="lg"
                 className="w-full sm:w-auto bg-white text-primary hover:bg-white/90 smooth-transition hover:shadow-xl"
