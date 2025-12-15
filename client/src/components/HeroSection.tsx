@@ -29,12 +29,12 @@ export default function HeroSection() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center slide-up" style={{ animationDelay: "200ms" }}>
-            <Link href="/contact">
+            <Link href="https://cdmq5sde51i.typeform.com/to/fRs6PC5e">
               <Button size="lg" className="w-full sm:w-auto smooth-transition hover:shadow-xl hover:scale-105">
                 Plan een vrijblijvend gesprek
               </Button>
             </Link>
-            <a href="#problem">
+            <a href="https://cdmq5sde51i.typeform.com/to/fRs6PC5e">
               <Button variant="outline" size="lg" className="w-full sm:w-auto smooth-transition hover:bg-secondary">
                 Vraag advies over jouw pipeline
               </Button>
