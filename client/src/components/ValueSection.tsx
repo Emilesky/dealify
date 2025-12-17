@@ -1,24 +1,12 @@
 export default function ValueSection() {
   const benefits = [
     {
-      title: "Betrouwbare pipeline zonder micromanagement",
-      description: "Automatische validatie en monitoring zonder constant ingrijpen nodig"
+      title: "Je stuurt eerder, niet harder",
+      description: "Er wordt ingegrepen wanneer het nog effect heeft, niet als het al misgaat."
     },
     {
-      title: "Minder ad hoc bijsturen, meer strategisch sturen",
-      description: "Stuur op feiten en trends, niet op dagelijkse crises"
-    },
-    {
-      title: "Heldere gesprekken met sales over prioriteiten",
-      description: "Objectieve data als basis voor constructieve discussies"
-    },
-    {
-      title: "Meer voorspelbaarheid in omzet en groei",
-      description: "Nauwkeurige forecasts die je kunt vertrouwen"
-    },
-    {
-      title: "Tijd en ruimte om vooruit te kijken",
-      description: "Minder tijd aan operationele zaken, meer aan strategie"
+      title: "Minder micromanagement, meer focus",
+      description: "Het team weet dat vaagheid zichtbaar wordt. Dat verandert gedrag."
     }
   ];
 
@@ -29,15 +17,12 @@ export default function ValueSection() {
         <div className="max-w-3xl mb-16">
           <div className="accent-line mb-6"></div>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Wat levert het jou op?
+            Effect voor management
           </h2>
-          <p className="text-lg text-muted-foreground">
-            Als directeur krijg je de controle terug en de rust die je verdient.
-          </p>
         </div>
 
         {/* Benefits Grid */}
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 max-w-3xl">
           {benefits.map((benefit, index) => (
             <div
               key={index}
@@ -48,7 +33,7 @@ export default function ValueSection() {
                   <span className="text-white text-sm font-bold">→</span>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-foreground mb-2">
+                  <h3 className="font-semibold text-foreground mb-2 text-lg">
                     {benefit.title}
                   </h3>
                   <p className="text-sm text-muted-foreground">

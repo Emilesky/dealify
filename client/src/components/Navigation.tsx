@@ -24,18 +24,18 @@ export default function Navigation() {
           <a href="#how-it-works" className="text-sm text-muted-foreground smooth-transition hover:text-foreground">
             Hoe het werkt
           </a>
-          <a href="https://cdmq5sde51i.typeform.com/to/fRs6PC5e" className="text-sm text-muted-foreground smooth-transition hover:text-foreground">
+          <a href="#contact" className="text-sm text-muted-foreground smooth-transition hover:text-foreground">
             Contact
           </a>
         </div>
 
         {/* CTA Button */}
         <div className="flex items-center gap-3">
-          <Link href="https://cdmq5sde51i.typeform.com/to/fRs6PC5e">
+          <a href="https://cdmq5sde51i.typeform.com/to/fRs6PC5e?typeform-source=dealifai.netlify.app" target="_blank" rel="noopener noreferrer">
             <Button variant="default" size="sm" className="smooth-transition hover:shadow-lg">
               Plan een gesprek
             </Button>
-          </Link>
+          </a>
         </div>
       </div>
     </nav>

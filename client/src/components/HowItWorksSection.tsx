@@ -2,23 +2,18 @@ export default function HowItWorksSection() {
   const steps = [
     {
       number: "1",
-      title: "Dealify koppelt aan je bestaande CRM",
-      description: "Eenmalige integratie met je huidige systeem"
+      title: "Dealify leest bestaande CRM-data",
+      description: "Geen nieuwe tools. Geen extra administratie. Er wordt gewerkt met wat er al is."
     },
     {
       number: "2",
-      title: "Elke deal wordt automatisch geanalyseerd",
-      description: "AI-gestuurde analyse van alle deals in real-time"
+      title: "Elke deal wordt beoordeeld op realiteit",
+      description: "Niet op gevoel, maar op signalen zoals actualiteit, concrete next steps en verschuivende close dates."
     },
     {
       number: "3",
-      title: "Datakwaliteit en next steps worden zichtbaar",
-      description: "Duidelijk overzicht van wat goed is en wat aandacht nodig heeft"
-    },
-    {
-      number: "4",
-      title: "Jij stuurt op feiten, niet op aannames",
-      description: "Objectieve data als basis voor je beslissingen"
+      title: "Management ziet waar ingrijpen nodig is en waar losgelaten kan worden",
+      description: "Helder overzicht van risico's, zonder ruis."
     }
   ];
 
@@ -29,36 +24,34 @@ export default function HowItWorksSection() {
         <div className="max-w-3xl mb-16">
           <div className="accent-line mb-6"></div>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Zo werkt Dealify
+            Hoe Dealify grip terugbrengt
           </h2>
           <p className="text-lg text-muted-foreground">
-            Geen nieuwe software om te leren. Wel direct overzicht.
+            Dealify kijkt niet naar hoeveel deals er zijn,
+            <br />
+            maar naar hoe betrouwbaar ze zijn.
           </p>
         </div>
 
         {/* Steps */}
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
           {steps.map((step, index) => (
             <div key={index} className="relative">
               {/* Step Card */}
-              <div className="bg-white p-8 rounded-lg border border-border smooth-transition hover:shadow-lg">
+              <div className="bg-white p-8 rounded-lg border border-border smooth-transition hover:shadow-lg h-full">
                 {/* Step Number */}
-                <div className="absolute -top-4 -left-4 w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg">
-                  {step.number}
+                <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-6">
+                  <span className="text-white font-bold text-lg">{step.number}</span>
                 </div>
 
-                <h3 className="font-semibold text-foreground mb-2 text-lg pt-2">
+                {/* Content */}
+                <h3 className="text-lg font-semibold text-foreground mb-3">
                   {step.title}
                 </h3>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground text-sm">
                   {step.description}
                 </p>
               </div>
-
-              {/* Connector Line (hidden on mobile) */}
-              {index < steps.length - 1 && (
-                <div className="hidden md:block absolute top-full left-1/2 w-0.5 h-8 bg-gradient-to-b from-primary to-transparent transform -translate-x-1/2 mt-2"></div>
-              )}
             </div>
           ))}
         </div>
@@ -66,7 +59,7 @@ export default function HowItWorksSection() {
         {/* Bottom Note */}
         <div className="mt-12 p-6 bg-white rounded-lg border border-border text-center">
           <p className="text-muted-foreground">
-            <strong className="text-foreground">Geen nieuwe software om te leren.</strong> Dealify werkt naadloos met je bestaande tools.
+            <strong className="text-foreground">Geen nieuwe software om te leren.</strong> Dealify werkt met wat je al hebt.
           </p>
         </div>
       </div>

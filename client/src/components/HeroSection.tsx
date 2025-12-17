@@ -24,19 +24,19 @@ export default function HeroSection() {
 
           {/* Subheadline */}
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto slide-up" style={{ animationDelay: "100ms" }}>
-          Dealify verhoogt de voorspelbaarheid van je sales door betere datakwaliteit en inhoudelijke feedback op deals.
+            Dealify verhoogt de voorspelbaarheid van je sales door betere datakwaliteit en inhoudelijke feedback op deals.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center slide-up" style={{ animationDelay: "200ms" }}>
-            <Link href="https://cdmq5sde51i.typeform.com/to/fRs6PC5e">
+            <a href="https://cdmq5sde51i.typeform.com/to/fRs6PC5e?typeform-source=dealifai.netlify.app" target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="w-full sm:w-auto smooth-transition hover:shadow-xl hover:scale-105">
-                Plan een vrijblijvend gesprek
+                Plan een reality check
               </Button>
-            </Link>
-            <a href="https://cdmq5sde51i.typeform.com/to/fRs6PC5e">
+            </a>
+            <a href="#how-it-works">
               <Button variant="outline" size="lg" className="w-full sm:w-auto smooth-transition hover:bg-secondary">
-                Vraag advies over jouw pipeline
+                Bekijk hoe dit werkt
               </Button>
             </a>
           </div>
