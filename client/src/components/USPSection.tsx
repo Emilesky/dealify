@@ -1,12 +1,19 @@
 export default function USPSection() {
   const features = [
     {
-      title: "Je data blijft van jou",
-      description: "Dealify draait op de eigen infrastructuur. Salesdata verlaat nooit de omgeving."
+      title: "Jouw data, jouw infrastructuur",
+      description:
+        "Dealify draait waar jij dat wilt: op eigen servers, private cloud, public cloud of hybride. Met volledige vrijheid in LLM-keuze en zonder dat salesdata naar externe AI-providers wordt verstuurd."
     },
     {
-      title: "Jouw infrastructuur",
-      description: "Integratie met de bestaande setup. Draait op eigen servers of cloud, volgens eigen voorkeuren."
+      title: "Transparante analyse, geen black box",
+      description:
+        "Dealify gebruikt eenvoudige, uitlegbare logica om kwaliteitsrisico’s zichtbaar te maken. Geen verborgen scores, geen voorspellingen die je niet kunt verklaren. Wat je ziet, kun je volgen en bespreken."
+    },
+    {
+      title: "Eenvoudig te implementeren",
+      description:
+        "Dealify werkt met bestaande CRM-exporten en past zich aan jouw omgeving aan. Geen nieuwe workflows, geen trainingstrajecten en geen lange implementaties. Je begint met kijken, niet met veranderen."
     }
   ];
 
@@ -17,15 +24,17 @@ export default function USPSection() {
         <div className="max-w-3xl mb-12">
           <div className="accent-line mb-6"></div>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            AI op eigen infrastructuur
+            AI op jouw infrastructuur
           </h2>
           <p className="text-lg text-muted-foreground">
-            Geen privacy issues. Geen afhankelijkheid van externe AI-providers. Volledige controle over data.
+            Geen verplichte cloud. Geen dataverplaatsing. Geen black box.
+            <br />
+            Volledige controle over waar en hoe analyse plaatsvindt.
           </p>
         </div>
 
         {/* Feature Cards */}
-        <div className="grid md:grid-cols-2 gap-8 max-w-3xl">
+        <div className="grid md:grid-cols-3 gap-8 max-w-5xl">
           {features.map((feature, index) => (
             <div
               key={index}
