@@ -26,7 +26,7 @@ export default function USPSection() {
               Je data blijft van jou
             </h3>
             <p className="text-muted-foreground">
-              Dealify draait op jouw infrastructuur. Je salesdata verlaat nooit jouw omgeving. Geen uploads naar externe servers.
+              Dealify draait op jouw infrastructuur. Jouw salesdata verlaat nooit jouw omgeving. Geen uploads naar externe servers.
             </p>
           </div>
 
@@ -52,7 +52,7 @@ export default function USPSection() {
               Jouw infrastructuur
             </h3>
             <p className="text-muted-foreground">
-              Dealify integreert met je bestaande setup. Draait op jouw servers, jouw cloud, jouw voorkeuren.
+              Dealify integreert met jouw bestaande setup. Draait op jouw servers, jouw cloud, jouw voorkeuren.
             </p>
           </div>
         </div>

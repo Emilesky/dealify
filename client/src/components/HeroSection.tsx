@@ -24,7 +24,7 @@ export default function HeroSection() {
 
           {/* Subheadline */}
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto slide-up" style={{ animationDelay: "100ms" }}>
-            Dealify helpt MKB-directeuren om hun salespipeline betrouwbaar, actueel en voorspelbaar te maken zonder extra tools of micromanagement.
+          Dealify verhoogt de voorspelbaarheid van je sales door betere datakwaliteit en inhoudelijke feedback op deals.
           </p>
 
           {/* CTA Buttons */}
