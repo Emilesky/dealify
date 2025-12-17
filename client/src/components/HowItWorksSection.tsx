@@ -2,18 +2,30 @@ export default function HowItWorksSection() {
   const steps = [
     {
       number: "1",
-      title: "Dealify leest bestaande CRM-data",
-      description: "Geen nieuwe tools. Geen extra administratie. Er wordt gewerkt met wat er al is."
+      title: "Dealify leest je bestaande CRM-exporten",
+      bullets: [
+        "Werkt met bestaande exports uit bijvoorbeeld Salesforce of HubSpot",
+        "Geen nieuwe tools, geen extra invoer en geen proceswijziging",
+        "Leest wat er vastligt: dealinfo, fase, close date en geschreven vervolgstappen"
+      ]
     },
     {
       number: "2",
       title: "Elke deal wordt beoordeeld op realiteit",
-      description: "Niet op gevoel, maar op signalen zoals actualiteit, concrete next steps en verschuivende close dates."
+      bullets: [
+        "Beoordeelt betrouwbaarheid, niet gevoel of targets",
+        "Kijkt naar actualiteit, concrete vervolgstappen en verschuivende close dates",
+        "Maakt zichtbaar waar aannames het overnemen van feiten"
+      ]
     },
     {
       number: "3",
-      title: "Management ziet waar ingrijpen nodig is en waar losgelaten kan worden",
-      description: "Helder overzicht van risico's, zonder ruis."
+      title: "Management ziet waar aandacht nodig is en wat losgelaten kan worden",
+      bullets: [
+        "Geen dashboards om te interpreteren, wel een helder overzicht",
+        "Laat zien waar twijfel en risico zich opstapelen",
+        "Ondersteunt keuzes op basis van wat er daadwerkelijk staat"
+      ]
     }
   ];
 
@@ -37,7 +49,6 @@ export default function HowItWorksSection() {
         <div className="grid md:grid-cols-3 gap-8">
           {steps.map((step, index) => (
             <div key={index} className="relative">
-              {/* Step Card */}
               <div className="bg-white p-8 rounded-lg border border-border smooth-transition hover:shadow-lg h-full">
                 {/* Step Number */}
                 <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-6">
@@ -45,12 +56,14 @@ export default function HowItWorksSection() {
                 </div>
 
                 {/* Content */}
-                <h3 className="text-lg font-semibold text-foreground mb-3">
+                <h3 className="text-lg font-semibold text-foreground mb-4">
                   {step.title}
                 </h3>
-                <p className="text-muted-foreground text-sm">
-                  {step.description}
-                </p>
+                <ul className="list-disc pl-5 space-y-2 text-muted-foreground text-sm">
+                  {step.bullets.map((bullet, i) => (
+                    <li key={i}>{bullet}</li>
+                  ))}
+                </ul>
               </div>
             </div>
           ))}
@@ -59,7 +72,8 @@ export default function HowItWorksSection() {
         {/* Bottom Note */}
         <div className="mt-12 p-6 bg-white rounded-lg border border-border text-center">
           <p className="text-muted-foreground">
-            <strong className="text-foreground">Geen nieuwe software om te leren.</strong> Dealify werkt met wat je al hebt.
+            <strong className="text-foreground">Geen nieuwe software om te leren.</strong>{" "}
+            Dealify werkt met wat je al hebt.
           </p>
         </div>
       </div>
