@@ -24,7 +24,8 @@ export default function HeroSection() {
 
           {/* Subheadline */}
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto slide-up" style={{ animationDelay: "100ms" }}>
-            Dealify verhoogt de voorspelbaarheid van je sales door betere datakwaliteit en inhoudelijke feedback op deals.
+          Dealify is een managementinstrument dat risico, uitstel en schijnzekerheid in je pipeline blootlegt.
+          Niet achteraf. Op tijd.
           </p>
 
           {/* CTA Buttons */}

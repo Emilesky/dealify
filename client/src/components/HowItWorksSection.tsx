@@ -2,7 +2,7 @@ export default function HowItWorksSection() {
   const steps = [
     {
       number: "1",
-      title: "Dealify leest je bestaande CRM-exporten",
+      title: "Je ziet meteen wat je kunt vertrouwen",
       bullets: [
         "Werkt met bestaande exports uit bijvoorbeeld Salesforce of HubSpot",
         "Geen nieuwe tools, geen extra invoer en geen proceswijziging",
@@ -11,16 +11,16 @@ export default function HowItWorksSection() {
     },
     {
       number: "2",
-      title: "Elke deal wordt beoordeeld op realiteit",
+      title: "Twijfel verdwijnt uit je forecast",
       bullets: [
-        "Beoordeelt betrouwbaarheid, niet gevoel of targets",
-        "Kijkt naar actualiteit, concrete vervolgstappen en verschuivende close dates",
-        "Maakt zichtbaar waar aannames het overnemen van feiten"
+        "Gebaseerd op jarenlang sales management oordeel",
+        "Ontworpen om schijnzekerheid te doorbreken",
+        "Eerlijk over wat klopt en wat niet"
       ]
     },
     {
       number: "3",
-      title: "Management ziet waar aandacht nodig is en wat losgelaten kan worden",
+      title: "Je weet waar je moet ingrijpen en waar niet",
       bullets: [
         "Geen dashboards om te interpreteren, wel een helder overzicht",
         "Laat zien waar twijfel en risico zich opstapelen",
